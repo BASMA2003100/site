@@ -1,0 +1,123 @@
+/* Corps de la page avec fond dégradé sombre et moderne */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; 
+  padding: 0;
+  min-height: 100vh;
+  background: #121212;
+  background: linear-gradient(135deg, #1f1f1f 0%, #3a3a3a 100%);
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* En-tête du site avec couleur bleue et ombre */
+header {
+  width: 100%;
+  padding: 25px 0;
+  background: #0d47a1;
+  box-shadow: 0 4px 8px rgba(13, 71, 161, 0.7);
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Section des produits : disposition en grille flexible */
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1100px;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+/* Carte de chaque produit avec fond sombre et arrondis */
+.produit {
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  width: 260px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ddd;
+}
+
+/* Effet au survol : élévation et ombre bleue */
+.produit:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 87, 255, 0.7);
+}
+
+/* Image du produit */
+.produit img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Titre du produit */
+.produit h2 {
+  font-size: 1.25rem;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+/* Prix du produit */
+.produit p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #00bcd4;
+  margin: 6px 0 14px 0;
+}
+
+/* Bouton “Ajouter au panier” */
+.produit button {
+  background: #0d47a1;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+/* Effet au survol du bouton */
+.produit button:hover {
+  background: #005bb5;
+}
+
+/* Section total avec style */
+.total {
+  max-width: 1100px;
+  margin: 20px auto 40px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00bcd4;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Boutons de la section total */
+.total button {
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+/* Effet au survol des boutons total */
+.total button:hover {
+  background: #005bb5;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Boutique Informatique</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans notre boutique informatique</h1>
+    </header>
+
+    <section class="produits">
+        <div class="produit">
+            <img src="image/dell-moniteur-24-pouces-se2417hgx.jpeg" alt="Ordinateur Portable" />
+            <h2>Ordinateur Portable</h2>
+            <p>Prix : 500€</p>
+            <button onclick="ajouterPanier('Ordinateur Portable', 500)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="image/imprimante-canon-jet-d-encre-pixma-ts3340-mfp-wifi-black.jpg" alt="Imprimante" />
+            <h2>Imprimante</h2>
+            <p>Prix : 150€</p>
+            <button onclick="ajouterPanier('Imprimante', 150)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="image/pc-portable-hp-elitebook-840-g11-ultra-5-135u-14-8-go-256-go-a36zpet-linksolutions.webp" alt="Écran 24 pouces" />
+            <h2>Écran 24 pouces</h2>
+            <p>Prix : 200€</p>
+            <button onclick="ajouterPanier('Écran 24 pouces', 200)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="image/téléchargé (1).jpg" alt="Souris sans fil" />
+            <h2>Souris sans fil</h2>
+            <p>Prix : 25€</p>
+            <button onclick="ajouterPanier('Souris sans fil', 25)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="image/téléchargé.jpg" alt="Clavier mécanique" />
+            <h2>Clavier mécanique</h2>
+            <p>Prix : 60€</p>
+            <button onclick="ajouterPanier('Clavier mécanique', 60)">Ajouter au panier</button>
+        </div>
+    </section>
+
+    <section class="total">
+        <h3>Total : <span id="totalPrix">0</span> €</h3>
+        <button onclick="voirPanier()">Voir le panier</button>
+        <button onclick="resetTotal()">Réinitialiser le total</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
